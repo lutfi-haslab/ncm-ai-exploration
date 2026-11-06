@@ -1,0 +1,206 @@
+{
+  "scale_reconstruction_accuracy_pct": {
+    "scale_1_l1": 55.76,
+    "scale_2_l2": 94.04,
+    "scale_3_l4": 99.9,
+    "scale_4_l8": 100.0,
+    "scale_5_l16": 100.0
+  },
+  "coarse_to_fine_example": {
+    "level_1_l1": {
+      "codes": [
+        3
+      ],
+      "matched_tokens": "10/16",
+      "decoded_text": "next concept language models sketch coarse semantic outlines in parallel and solve hard structured planning problems",
+      "diff_view": "next concept language models [sketch] [coarse] [semantic] [outlines] [in] [parallel] and solve hard structured planning problems"
+    },
+    "level_2_l2": {
+      "codes": [
+        4,
+        4
+      ],
+      "matched_tokens": "15/16",
+      "decoded_text": "next concept reasoning models refine multiscale latent representations across levels and solve hard structured planning problems",
+      "diff_view": "next concept [reasoning] models refine multiscale latent representations across levels and solve hard structured planning problems"
+    },
+    "level_3_l4": {
+      "codes": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "matched_tokens": "16/16",
+      "decoded_text": "next concept language models refine multiscale latent representations across levels and solve hard structured planning problems",
+      "diff_view": "next concept language models refine multiscale latent representations across levels and solve hard structured planning problems"
+    },
+    "level_4_l8": {
+      "codes": [
+        6,
+        6,
+        6,
+        6,
+        3,
+        3,
+        3,
+        3
+      ],
+      "matched_tokens": "16/16",
+      "decoded_text": "next concept language models refine multiscale latent representations across levels and solve hard structured planning problems",
+      "diff_view": "next concept language models refine multiscale latent representations across levels and solve hard structured planning problems"
+    },
+    "level_5_l16": {
+      "codes": [
+        5,
+        5,
+        5,
+        4,
+        4,
+        5,
+        4,
+        4,
+        7,
+        4,
+        7,
+        7,
+        4,
+        4,
+        4,
+        7
+      ],
+      "matched_tokens": "16/16",
+      "decoded_text": "next concept language models refine multiscale latent representations across levels and solve hard structured planning problems",
+      "diff_view": "next concept language models refine multiscale latent representations across levels and solve hard structured planning problems"
+    }
+  },
+  "generation_examples": [
+    {
+      "corpus_idx": 0,
+      "prompt": "next concept language models compress complex",
+      "target": "next concept language models compress complex ideas into discrete codes to generate accurate responses much faster",
+      "ncm_passes": [
+        "next concept language models bypass slow ideas token memory bottlenecks to generate accurate responses much faster",
+        "next concept language models compress complex ideas into discrete codes for efficient real time inference tasks",
+        "next concept language models compress complex ideas into discrete codes for efficient real time inference tasks",
+        "next concept language models compress complex ideas into discrete codes for efficient real time inference tasks",
+        "next concept language models compress complex ideas into discrete codes for efficient real time inference tasks"
+      ],
+      "ncm_generated": "next concept language models compress complex ideas into discrete codes for efficient real time inference tasks"
+    },
+    {
+      "corpus_idx": 21,
+      "prompt": "parallel hierarchical neural networks sketch coarse",
+      "target": "parallel hierarchical neural networks sketch coarse semantic outlines in parallel while preserving global logical sentence structure",
+      "ncm_passes": [
+        "parallel hierarchical neural networks bypass slow sequential token memory bottlenecks to generate accurate responses much faster",
+        "parallel hierarchical neural networks sketch coarse semantic outlines in parallel while preserving global logical sentence structure",
+        "parallel hierarchical neural networks sketch coarse semantic outlines in parallel while preserving global logical sentence structure",
+        "parallel hierarchical neural networks sketch coarse semantic outlines in parallel while preserving global logical sentence structure",
+        "parallel hierarchical neural networks sketch coarse semantic outlines in parallel while preserving global logical sentence structure"
+      ],
+      "ncm_generated": "parallel hierarchical neural networks sketch coarse semantic outlines in parallel while preserving global logical sentence structure"
+    },
+    {
+      "corpus_idx": 42,
+      "prompt": "modern gpu tensor clusters refine multiscale",
+      "target": "modern gpu tensor clusters refine multiscale latent representations across levels for efficient real time inference tasks",
+      "ncm_passes": [
+        "modern gpu tensor clusters bypass slow sequential token memory bottlenecks and generate accurate responses planning problems",
+        "modern gpu tensor clusters refine multiscale latent representations across levels and solve hard structured planning problems",
+        "modern gpu tensor clusters refine multiscale latent representations across levels and solve hard structured planning problems",
+        "modern gpu tensor clusters refine multiscale latent representations across levels and solve hard structured planning problems",
+        "modern gpu tensor clusters refine multiscale latent representations across levels and solve hard structured planning problems"
+      ],
+      "ncm_generated": "modern gpu tensor clusters refine multiscale latent representations across levels and solve hard structured planning problems"
+    },
+    {
+      "corpus_idx": 63,
+      "prompt": "autonomous symbolic reasoning agents bypass slow",
+      "target": "autonomous symbolic reasoning agents bypass slow sequential token memory bottlenecks and solve hard structured planning problems",
+      "ncm_passes": [
+        "autonomous symbolic reasoning agents compress multiscale latent representations across levels and solve accurate structured planning problems",
+        "autonomous symbolic reasoning agents bypass slow sequential token memory bottlenecks for efficient real time inference tasks",
+        "autonomous symbolic reasoning agents bypass slow sequential token memory bottlenecks for efficient real time inference tasks",
+        "autonomous symbolic reasoning agents bypass slow sequential token memory bottlenecks for efficient real time inference tasks",
+        "autonomous symbolic reasoning agents bypass slow sequential token memory bottlenecks for efficient real time inference tasks"
+      ],
+      "ncm_generated": "autonomous symbolic reasoning agents bypass slow sequential token memory bottlenecks for efficient real time inference tasks"
+    }
+  ],
+  "scaling_benchmark": [
+    {
+      "seq_len": 16,
+      "scales": [
+        1,
+        2,
+        4,
+        8,
+        16
+      ],
+      "ar_forward_passes": 13,
+      "ncm_forward_passes": 5,
+      "ar_latency_ms": 7.02,
+      "ncm_latency_ms": 6.33,
+      "speedup_x": 1.11,
+      "pass_reduction_x": 2.6
+    },
+    {
+      "seq_len": 64,
+      "scales": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64
+      ],
+      "ar_forward_passes": 61,
+      "ncm_forward_passes": 7,
+      "ar_latency_ms": 56.04,
+      "ncm_latency_ms": 17.05,
+      "speedup_x": 3.29,
+      "pass_reduction_x": 8.71
+    },
+    {
+      "seq_len": 128,
+      "scales": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128
+      ],
+      "ar_forward_passes": 125,
+      "ncm_forward_passes": 8,
+      "ar_latency_ms": 187.4,
+      "ncm_latency_ms": 31.46,
+      "speedup_x": 5.96,
+      "pass_reduction_x": 15.62
+    },
+    {
+      "seq_len": 256,
+      "scales": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "ar_forward_passes": 253,
+      "ncm_forward_passes": 9,
+      "ar_latency_ms": 785.93,
+      "ncm_latency_ms": 71.4,
+      "speedup_x": 11.01,
+      "pass_reduction_x": 28.11
+    }
+  ]
+}
